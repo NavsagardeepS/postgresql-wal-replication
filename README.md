@@ -2,7 +2,7 @@
 
 A bash-automated setup for migrating/replicating data between two independent PostgreSQL clusters using `logical replication` (publication + subscription model), instead of physical/streaming (WAL-based binary) replication.
 
-### Why Logical Replication
+## Why Logical Replication
 
 | Physical Replication | Logical Replication |
 |---|---|
@@ -13,12 +13,12 @@ A bash-automated setup for migrating/replicating data between two independent Po
 
 This project uses logical replication because the goal was selective, online migration of a database from one cluster (Publisher) to another (Subscriber) without taking the source down.
 
-### Architecture
+## Architecture
 
 ![Alt text](images/wal-replication.png)
 
 
-### Prerequisites
+## Prerequisites
 
 On the Publisher and Subscriber `postgresql.conf` must have:
 ```
@@ -33,7 +33,7 @@ wal_keep_size: <wal-keep-size>
 max_wal_size: <max-wal-size>
 ```
 
-### Migration Steps
+## Migration Steps
 
 __Configuration:__
 
@@ -43,7 +43,7 @@ __Replication Status:__
 
 __Disable Replication:__
 
-### Verification Commands
+## Verification Commands
 
 - On the publisher, Check the status of replication slots.
   ```
