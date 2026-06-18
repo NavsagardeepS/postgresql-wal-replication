@@ -1,4 +1,4 @@
-# PostgreSQL Logical Replication — Publication/Subscription Migration
+# PostgreSQL Logical Replication
 
 A bash-automated setup for migrating/replicating data between two independent PostgreSQL clusters using `logical replication` (publication + subscription model), instead of physical/streaming (WAL-based binary) replication.
 
@@ -16,7 +16,6 @@ This project uses logical replication because the goal was selective, online mig
 ## Architecture
 
 ![Alt text](images/wal-replication.png)
-
 
 ## Prerequisites
 
