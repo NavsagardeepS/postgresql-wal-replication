@@ -32,16 +32,6 @@ wal_keep_size: <wal-keep-size>
 max_wal_size: <max-wal-size>
 ```
 
-## Migration Steps
-
-__Configuration:__
-
-__Enable Replication:__
-
-__Replication Status:__
-
-__Disable Replication:__
-
 ## Verification Commands
 
 - On the publisher, Check the status of replication slots.
